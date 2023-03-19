@@ -1,0 +1,27 @@
+package com.example.SpringBootAppDB.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.SpringBootAppDB.model.Employee;
+import com.example.SpringBootAppDB.repository.EmployeeRepository;
+
+@Service
+public class EmployeeDAO {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+
+	public Employee getEmployee(Long id) {
+
+		for (Employee empList : employeeRepository.findAll()) {
+			System.out.println("Value" + empList.getId());
+			System.out.println("Value" + empList.getName());
+
+		}
+		return null;
+	}
+
+}

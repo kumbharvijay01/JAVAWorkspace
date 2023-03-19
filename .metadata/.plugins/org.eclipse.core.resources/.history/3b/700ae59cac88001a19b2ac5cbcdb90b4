@@ -1,0 +1,28 @@
+package com.example.SpringBootAppDB;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.example.SpringBootAppDB.dao.SystemRepository;
+
+@SpringBootApplication
+@EnableJpaRepositories("com.example.*")
+@EntityScan("com.example.*")
+
+public class SpringBootAppDb {
+	@Autowired
+	DataSource dataSource;
+
+	@Autowired
+	SystemRepository systemRepository;
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootAppDb.class, args);
+	}
+
+}

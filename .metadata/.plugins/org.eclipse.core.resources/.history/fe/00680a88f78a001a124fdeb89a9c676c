@@ -1,0 +1,5 @@
+package com.org.SpringSecurityExample.entity;
+
+public class Book {
+
+}

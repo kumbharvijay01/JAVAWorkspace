@@ -1,0 +1,5 @@
+package com.example.SpringBootAppDB.dao;
+
+public class EmployeeDAO {
+
+}

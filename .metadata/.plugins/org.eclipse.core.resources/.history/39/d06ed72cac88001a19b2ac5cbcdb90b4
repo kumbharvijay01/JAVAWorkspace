@@ -1,0 +1,9 @@
+package com.example.SpringBootAppDB.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SystemRepository {
+
+	
+}

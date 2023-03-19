@@ -1,0 +1,21 @@
+package com.example.SpringBootAppDB.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.SpringBootAppDB.repository.EmployeeRepository;
+
+@Service
+public class EmployeeDAO {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	public Employee getEmployee(Long id)
+	{
+		
+		
+		return null;
+	}
+	
+}

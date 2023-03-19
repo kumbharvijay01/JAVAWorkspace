@@ -1,0 +1,14 @@
+server.port=8080
+
+ 
+logging.level.org.springframework=DEBUG
+logging.level.com.example=DEBUG
+  
+# Output to a temp_folder/file
+logging.file=F:/Study/Setup/Eclipse_workspace/application.log
+
+# Logging pattern for the console
+logging.pattern.console= %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+ 
+# Logging pattern for file
+logging.pattern.file= %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%

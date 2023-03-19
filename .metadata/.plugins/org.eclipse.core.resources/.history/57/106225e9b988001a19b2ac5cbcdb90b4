@@ -1,0 +1,5 @@
+package com.example.SpringBootAppDB.controller;
+
+public class IndexController {
+
+}

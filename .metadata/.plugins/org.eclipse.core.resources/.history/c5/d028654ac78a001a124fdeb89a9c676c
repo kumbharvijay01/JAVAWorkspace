@@ -1,0 +1,5 @@
+package com.example.SpringBootAppDB.model;
+
+public class Book {
+
+}

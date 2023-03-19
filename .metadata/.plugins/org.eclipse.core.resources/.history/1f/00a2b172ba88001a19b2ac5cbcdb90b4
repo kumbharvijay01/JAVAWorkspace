@@ -1,0 +1,31 @@
+package com.example.SpringBootAppDB.controller;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.SpringBootAppDB.dao.EmployeeRepository;
+import com.example.SpringBootAppDB.model.Employee;
+
+@RestController
+public class IndexController {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+	@GetMapping("/")
+	public String getHome()
+	{
+		return "Welcome to DB connection !!";
+	}
+	
+	@GetMapping("/Index")
+	public Employee getEmployee() {
+		Employee emp = new Employee();
+		emp.setLastaudit(new Date());
+		emp.setName("Vijay");
+		employeeRepository.save(emp);
+		return emp;
+	}
+}

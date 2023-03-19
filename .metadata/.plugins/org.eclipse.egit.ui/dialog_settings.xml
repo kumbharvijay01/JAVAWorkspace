@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="1"/>
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\DELL\git\eclipse_workplace\.git"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com:443/kumbharvijay01/Springbootapplication.git"/>
+		<item value="https://github.com:443/kumbharvijay01/eclipse_workplace.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\DELL\git\eclipse_workplace\.git">
+			<item value="false"/>
+			<item value="DELL &lt;DELL@DESKTOP-46CS5FG&gt;"/>
+			<item value="Changes Done"/>
+			<item value="DELL &lt;DELL@DESKTOP-46CS5FG&gt;"/>
+			<item value="a4a98cec2f2ca859aeab1048e442bc053a3e2136"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+</section>

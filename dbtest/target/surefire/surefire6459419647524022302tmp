@@ -1,0 +1,24 @@
+#surefire
+#Mon Apr 27 00:40:02 IST 2020
+testClassesDirectory=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\target\\test-classes
+classPathUrl.2=C\:\\Users\\DELL\\.m2\\repository\\junit\\junit\\3.8.1\\junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\target\\classes
+reportsDirectory=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\target\\surefire-reports
+classPathUrl.0=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\target\\test-classes
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\DELL\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.12.4\\surefire-api-2.12.4.jar
+surefireClassPathUrl.0=C\:\\Users\\DELL\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.12.4\\surefire-junit3-2.12.4.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+tc.0=com.org.dbtest.AppTest
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+runStatisticsFile=F\:\\Study\\Setup\\Eclipse_workspace\\dbtest\\.surefire-0D412F8D431ECF357896835C24FE7A2CA6B4C9B8
+includes0=**/Test*.java
+childDelegation=false

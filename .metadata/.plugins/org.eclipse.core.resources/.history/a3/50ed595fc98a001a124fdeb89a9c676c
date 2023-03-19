@@ -1,0 +1,63 @@
+package com.example.SpringBootAppDB.controller;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.SpringBootAppDB.SpringBootAppDb;
+import com.example.SpringBootAppDB.dao.EmployeeDAO;
+import com.example.SpringBootAppDB.model.Employee;
+import com.example.SpringBootAppDB.repository.EmployeeRepository;
+
+@RestController
+public class IndexController {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	@Autowired
+	EmployeeDAO employeeDAO;
+	
+	public static final Logger LOGGER=LoggerFactory.getLogger(SpringBootAppDb.class);
+	
+	@GetMapping("/")
+	public String getHome()
+	{
+		LOGGER.debug("getHome METHOD called");
+		
+		return "Welcome to DB connection !!";
+	}
+	
+	@GetMapping("/setemp")
+	public Employee setEmployee() {
+		
+		
+		Employee emp = new Employee();
+		emp.setLastaudit(new Date());
+		emp.setName("Naru");
+		employeeRepository.save(emp);
+		employeeDAO.save(emp);
+		return emp;
+	}
+//	@GetMapping("/allemp")
+//	public List<Employee> allEmployee() {
+//		int size=(int) employeeRepository.count();
+//		List<Employee> employees=new ArrayList<Employee>(size);
+//		employees = employeeRepository.findAll();
+//		return employees;
+//	}
+//	
+	@GetMapping("/allemp")
+	public List<Employee> allEmployee() {
+		return employeeDAO.getAllEmployees();
+	}
+	
+	
+}
